@@ -1,21 +1,4 @@
-# Fulu.CacheManager
-
-using CacheManager.Core;
-
-using System;
-using System.Collections.Generic;
-using System.Collections.Specialized;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Timers;
-
-namespace Fulu.CacheManager
-{
-    class Program
-    {
-        static void Main(string[] args)
+static void Main(string[] args)
         {
             var cache = CacheFactory.Build(
                 "getStartedCache",
@@ -34,5 +17,3 @@ namespace Fulu.CacheManager
             Console.WriteLine("We are done...");
             Console.ReadKey();
         }
-    }
-}
